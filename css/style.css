@@ -1,0 +1,84 @@
+/* This is a CSS comment */ 
+
+body {
+	background-color: #F6D8CE;
+	background-image: url(../images/bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	font-family: Trebuchet, Helvetica, sans-serif;
+}
+@media screen and (orientation: portrait) {
+	body {
+		background-size: auto 100%;
+	}
+}
+
+.main {    /* this is the div element we have titled from html */
+	max-width: 600px;  /* width will not be mobile responsive - max width will help re-size the page to the users platfrom */
+	background-color: rgba(225,255,255,0.6); /* 225, 225, 225 is the color of the background and then the opaque / transparency is between 0-1 */
+	box-shadow: 0 0 20px 5px rgba(225,225,225,0.6);
+	margin: 0 auto;
+	padding: 20px;  /* google padding and margins */
+	border-radius: 10px; /* if you want to change the shape 0 0 0 0  i.e. use cordinates for corners- top left, top right, bottom right, bottom left  */
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Lobster', cursive;
+	border-bottom: 5px dotted black; /* always need mixels, style, clour */
+	padding-bottom: 20px;
+	/*text-transform: uppercase;*/
+}
+
+h1 span {  /* this span helps seperate the heading onto two lines, span element in html */
+	display: block;
+	font-size: 30px;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 5px;  /* spaced out our paragraph lining */
+	font-size: 14px;
+}
+
+h3{
+
+	cursor:pointer; /* this is to tell the browser to turn your curser into a pointer - alerting the user that it is clickable and has a function*/
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 5px;
+	font-size: 25px;
+	font-family: 'Lobster', cursive;
+	margin-bottom: 0;
+}
+
+img {
+	border: 2px dashed #000000;
+	border-radius: 20px;  /* if you want to change the shape 0 0 0 0  i.e. use cordinates for corners- top left, top right, bottom right, bottom left  */
+	display: block;
+	margin: 0 auto 40px;
+	width: 500px;
+}
+
+ul,
+p {
+	list-style: none;
+	padding-left: 0;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5;
+	font-family: 'Handlee', cursive;
+	margin-top: 5px;
+}
+
+a:hover, /* Twitter, FB or IG - word to hyperlink if it curser hovers, focuses or clicks it */ 
+a:focus,
+a:visited, {
+		color: #990033;
+		text-decoration: underline;
+}
